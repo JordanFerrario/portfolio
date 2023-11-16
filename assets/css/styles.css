@@ -1,0 +1,139 @@
+:root {
+    --blue-color: #82afff;
+    --purple-color: #9c74d8;
+    --orange-color: #ffaf61;
+    --green-color: #35cc8e;
+    --red-color: #ff5757;
+    --main-bg-color: #f3f0ec;
+    --content-bg-color: #fafafa;
+}
+
+* {
+    /* box-shadow: 0 0 0 1px red; */
+}
+
+body {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    background-color: var(--bg-color);
+    font-family: 'Open Sans', sans-serif;
+    flex-direction: column;
+}
+
+#navbar, .content-container {
+    width: calc(100% - 150px);
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: var(--content-bg-color);
+}
+
+.content-container {
+    margin-bottom: 0;
+    height: 100vh;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+
+
+#navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 0;
+    border: 2px solid black;
+    position: fixed;
+    z-index: 1;
+}
+
+#navbar a {
+    color: black;
+    margin-left: 2.5vw;
+    font-size: 1.25rem;
+}
+
+#navbar a.left-aligned {
+    margin-right: auto;
+    font-weight: bold;
+    /* animation: color-change 10s infinite; */
+}
+
+@keyframes color-change {
+    0% {color: var(--purple-color);}
+    50% {color: var(--orange-color);}
+    100% {color: var(--blue-color);}
+}
+
+#navbar a.right-aligned {
+   padding-right: 2vw;
+}
+
+#favicon {
+    height: 25px;
+    width: 25px;
+    transform: translateX(-15vw);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+#about h2 {
+    margin: 0;
+    padding-left: 2.5vw;
+    margin-top: 10vh;
+    font-size: 6vw;
+    letter-spacing: -.6vw;
+    line-height: 5vw;
+}
+
+.dev {
+    color: var(--purple-color) ;
+}
+
+.photo {
+    color: var(--orange-color) ;
+}
+
+.game {
+    color: var(--blue-color);
+}
+
+.text-aligned-left {
+    width: 40vw;
+    margin-left: 3vw;
+    margin-top: 7vh;
+    font-size: 1.25rem;
+    letter-spacing: .025vw;
+}
+
+.text-aligned-left a {
+    color: var(--blue-color);
+    font-weight: bold;
+}
+
+.text-aligned-left .jordan {
+    color: var(--purple-color);
+    font-weight: bold;
+}
+#my-picture {
+    height: 65vh;
+    width: 65vh;
+    transform: translate(50vw, -75vh);
+    border-radius: 50%;
+    box-shadow: 15px 15px 10px 0px var(--orange-color);
+}
+
+#lemmon {
+    display: flex;
+    justify-content: flex-start;
+    overflow: hidden;
+    /* height: 100vh; */
+    margin: 0;
+}
